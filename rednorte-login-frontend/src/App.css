@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e8f4ff, #f8fbff);
+  color: #102033;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 18px 45px rgba(16, 32, 51, 0.14);
+}
+
+.dashboard-card {
+  max-width: 620px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  color: #005b96;
+  font-size: 34px;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 10px 0 24px;
+  color: #5d7288;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 20px;
+  background: #eef5fb;
+  padding: 6px;
+  border-radius: 14px;
+}
+
+.tab {
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  color: #49667f;
+}
+
+.tab.active {
+  background: #005b96;
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 700;
+  color: #23384d;
+  margin-top: 6px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cfdce8;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #005b96;
+  box-shadow: 0 0 0 3px rgba(0, 91, 150, 0.12);
+}
+
+.btn {
+  margin-top: 16px;
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  background: #005b96;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #004a7a;
+}
+
+.btn.secondary {
+  background: #263b4f;
+}
+
+.btn.secondary:hover {
+  background: #182838;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.message.success {
+  background: #e8f8ef;
+  color: #207445;
+}
+
+.message.error {
+  background: #ffeaea;
+  color: #b12626;
+}
+
+.success-box {
+  background: #eef8ff;
+  border: 1px solid #cfe8fb;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 22px 0;
+}
+
+.success-box h2 {
+  margin-top: 0;
+  color: #005b96;
+}
+
+.role-box {
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.role-box h3 {
+  margin-top: 0;
+}
+
+.role-box.admin {
+  background: #fff4df;
+  border: 1px solid #ffd999;
+}
+
+.role-box.paciente {
+  background: #ecfff5;
+  border: 1px solid #b9f1d2;
+}
